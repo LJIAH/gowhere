@@ -1,0 +1,240 @@
+*{
+	font-size:12px;
+	line-height: 24px;
+	font-family: "微软雅黑";
+	color:#3c3c3c;
+}
+body,div,ul,ol,li,h1{
+	margin:0;
+	padding: 0;
+}
+ul,ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+
+header{
+	width:100%;
+	border-bottom: 2px solid #00afc7;
+}
+.header_center{
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+
+}
+.header_logo{
+	float:left;
+
+}
+.header_nav{
+	float: right;
+	overflow: hidden;
+}
+
+.person_nav{
+	float:right;
+	overflow:hidden;
+	padding: 5px 0 7px 0;
+}
+.person_nav li{
+	float: left;
+	padding: 0 10px;
+	line-height: 12px;
+	color: #000000;
+	border-right: solid 1px #ddd;
+}
+
+.html_nav{
+	clear: both;
+	float: right;
+	overflow: hidden;
+}
+.html_nav li{
+	float: left;
+	padding: 17px 10px 0 10px;
+	line-height: 10px;
+}
+.html_nav li a{
+	font-size: 16px;
+	line-height: 10px;
+	font-weight: bold;
+}
+.html_nav li a:hover{
+	color:#0088a4;
+}
+
+/*最左侧的菜单*/
+.account_nav_ad{
+	position: absolute;
+	top: 10px;
+	left: 0;
+	z-index: 2;
+}
+.account_nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 34px;
+	background: #4c6dd6;
+}
+.account_nav_vip{
+	padding: 30px 0;
+	width: 24px;
+	margin: auto;
+	margin-top: 200px;
+}
+
+.account_nav_center li, .account_nav_other li{
+	padding: 4px 0;
+	margin: 4px 0;
+	line-height: 20px;
+	color: #fff;
+	font-family: "宋体";
+	text-align: center;
+}
+.account_nav_center li img, .account_nav_other li img{
+	margin: 4px auto;
+	width: auto;
+}
+.account_nav_other{
+	border: 0;
+	margin-top: 300px;
+}
+.account_nav_vip li:hover, .account_nav_center li:hover, .account_nav_other li:hover{
+	cursor:pointer;
+}
+
+
+/*特惠推荐*/
+.content_center{
+	width:1200px;
+	margin: 0 auto;
+}
+.recommend{
+	margin-top: 25px;
+	overflow: hidden;
+}
+.recommend_left{
+	float:left;
+}
+.recommend_nav{
+	border-bottom: 2px solid #00afc7;
+	height: 39px;
+	width: 100%;
+	background-color: #fff;
+	overflow: hidden;
+}
+.recommend_nav li{
+	float: left;
+	line-height: 33px;
+	padding: 0 13px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #00afc7;
+}
+.recommend_nav li.cur{
+	background-color: #00afc7;
+	color: #fff;
+}
+.recommend_nav li:hover{
+	background-color: #00afc7;
+	color: #fff;
+
+}
+
+/*北京到首尔*/
+.recommend_journey{
+	float: left;
+	border: 1px solid #eee;
+	width: 240px;
+	margin-right: 10px;
+	margin-top: 16px;
+	overflow: hidden;
+}
+.recommend_journey:hover{
+	border: 1px solid #00afc7;
+	cursor: pointer;
+}
+.top_journey{
+	clear: both;
+	float: left;
+	width: 430px;
+}
+.recommend_journey_pic{
+	width: 240px;
+	-webkit-margin-before: 0em;
+}
+.recommend_journey_info{
+	overflow:hidden;
+	padding: 0px 10px 6px 10px;
+}
+.top_journey .recommend_journey_info{
+	float:right;
+	padding:0!important;
+	position:relative;
+	width:190px!important;
+	height:238px;
+}
+.recommend_journey_info h1{
+	width:100%;
+	line-height:28px;
+	color:#333;
+	font-size:14px;
+	font-weight:bold;
+}
+.top_journey .recommend_journey_info h1{
+	font-size:20px!important;
+	color:#fff!important;
+	padding:10px 0!important;
+	background:#3bb0d0;
+	text-align:center;
+}
+.recommend_journey_info p{
+	text-align:left;
+	line-height:26px;
+	color:#999;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+}
+.top_journey .recommend_journey_info p{
+	line-height:22px!important;
+	color:#555!important;
+	margin-top:10px;
+	padding:0 10px;
+}
+
+/*价格*/
+.recommend_journey_price{
+	overflow:hidden;
+	width:100%;
+}
+.top_journey .recommend_journey_info .recommend_journey_price{
+	position:absolute;
+	bottom:8px;
+}
+.recommend_journey_price span {
+	display: inline-block;
+	line-height: 28px;
+}
+.price_now {
+	float: left;
+	color: red;
+	font-size: 16px;
+	font-weight: bold;
+	padding-left:10px;
+}
+
+.price_market {
+	float:right;
+	color: #999;
+	padding-right:10px;
+}
+.price_market span{
+	text-decoration: line-through;
+	color: #999;
+}
+
