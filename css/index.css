@@ -1,19 +1,43 @@
 *{
-	font-size:12px;
+	font-size: 12px;
 	line-height: 24px;
 	font-family: "微软雅黑";
-	color:#3c3c3c;
+	color: #3c3c3c;
 }
+
 body,div,ul,ol,li,h1,h2,h3,h4,h5,dl,dd,dt,p{
 	margin:0;
 	padding:0;
 	font-weight:normal;
 }
 ul,ol{
-	list-style: none;
+	list-style:none;
+}
+img{
+	display:block;
+	margin:0;
+	padding:0;
+	border:none;
+}
+table{
+	margin:0;
+	padding:0;
+}
+span{
+	text-align:center;
 }
 a{
-	text-decoration: none;
+	text-decoration:none;
+}
+input,iframe,button{
+	display:block;
+	border:none;
+	margin:0;
+	padding:0;
+	background-color:transparent;
+}
+button{
+	cursor:pointer;
 }
 /*-----------------------------------------------------------------------*/
 
@@ -21,7 +45,6 @@ a{
 .of_h{overflow:hidden;}
 .fr{float:right;}
 .fl{float:left;}
-
 .fw_b{font-weight:bold;}
 
 .color_b187{color:#0084bb!important;}
@@ -160,22 +183,24 @@ header{
 	margin: 0 auto;
 }
 .search_nav{
-	width: 710px;
+	width: 713px;
 	background: #00afc7;
 	padding:6px;
-	height:310px;
+	height:324px;
 	margin-top: 15px;
+
 }
 .search_nav_left{
 	float: left;
 }
 .search_nav_left li {
 	color: #fff;
-	line-height:38.5px;
-	width:72px;
+	line-height:46px;
+	width:70px;
 	text-align: center;
 	font-size:15px;
-	border-bottom: 1px solid #41b4ca;
+
+	/*border-bottom: 1px solid #41b4ca;*/
 }
 .search_nav_left li:hover {
 	cursor: pointer;
@@ -189,12 +214,11 @@ header{
 .search_nav_right{
 	float:right;
 	background:#fff;
-	/*width: 638px;*/
-	height: 308px;
+	display:none;
 }
 .search_condition{
 	overflow:hidden;
-	margin:0 20px;
+	margin:0 20px 0 16px;
 	margin-top:5px;
 }
 .search_condition li,.air_func{
@@ -214,7 +238,7 @@ header{
 	cursor: pointer;
 }
 .search_hotel{
-	margin:0 20px;
+	margin:0 20px 0 16px;
 }
 .search_hotel_form{
 	overflow:hidden;
@@ -231,10 +255,10 @@ header{
 .search_hotel_form input[type='radio']{
 	display: inline-block;
 	vertical-align: middle;
-	line-height:20px;
+	line-height:18px;
 	width:12px;
 	height:12px;
-	margin:0 10px 0 30px;
+	/*margin:0 10px 0px 30px;*/
 }
 .inputBox_border{
 	float:left;
@@ -250,28 +274,37 @@ header{
 	padding:0 5px;
 }
 .inputBox_border input{
-	height:36px;
-	line-height:36px;
 	display: inline-block;
-	width:178px;
+	height: 36px;
+	line-height: 36px;
+	width: 200px;
 	text-indent: 8px;
-	margin:0 5px;
-	background:url(./img/pic_27.png) no-repeat right center;
-	font-size:14px;
-	text-align:left;
+	margin: 0 5px;
+	background: url(../img/pic_27.png) no-repeat right center;
+	font-size: 14px;
+	text-align: left;
 }
 
 /*---------------------------------------------------------------------*/
-.inputBox_border input[name='hotelName'],.inputBox_border input[name='holidayKeyName'],.inputBox_border input[name='teamName']{
-	width:290px!important;
+.inputBox_border input[name='hotelName'],
+.inputBox_border input[name='holidayKeyName'],
+.inputBox_border input[name='teamName']{
+	width:277px!important;
 	text-indent: 0!important;
 }
-.inputBox_border input[name='holidayKeyName'],.inputBox_border input[name='teamName']{
+.inputBox_border input[name='holidayKeyName'],
+.inputBox_border input[name='teamName']{
 	background:none;
 }
-.inputBox_border input[name='hotelInTime'],.inputBox_border input[name='hotelOutTime'],
-.inputBox_border input[name='startPlace'],.inputBox_border input[name='endPlace'],.inputBox_border input[name='startDate'],.inputBox_border input[name='endDate'],
-.inputBox_border input[name='carDate'],.inputBox_border input[name='carPlace'],.inputBox_border input[name='carStartTime']{
+.inputBox_border input[name='hotelInTime'],
+.inputBox_border input[name='hotelOutTime'],
+.inputBox_border input[name='startPlace'],
+.inputBox_border input[name='endPlace'],
+.inputBox_border input[name='startDate'],
+.inputBox_border input[name='endDate'],
+.inputBox_border input[name='carDate'],
+.inputBox_border input[name='carPlace'],
+.inputBox_border input[name='carStartTime']{
 	width:200px!important;
 	text-indent: 0!important;
 }
@@ -298,7 +331,7 @@ header{
 	clear:both;
 	float:left;
 	width:100%;
-	margin-top:15px;
+	margin-top: 15px;
 	overflow:hidden;
 }
 .search_info1 p{
@@ -324,7 +357,7 @@ header{
 .search_form_ad{
 	overflow:hidden;
 	width:auto;
-	margin:16px 0 8px 48px;
+	margin:16px 0 15px 48px;
 }
 .search_form_ad li{
 	float:left;
@@ -345,6 +378,152 @@ header{
 	margin-right:4px;
 }
 /*-------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------*/
+/*------------accountNav---------*/
+
+
+.air_func{
+	display:inline-block;
+	float:right;
+	background-position:left center;
+	background-repeat: no-repeat;
+}
+.air_func_bg1{
+	background-image:url(../img/icon_06.png);
+}
+.air_func_bg2{
+	background-image:url(../img/icon_03.png);
+}
+.air_func a{
+	font-size:12px;
+	color:#999;
+}
+.air_func a:hover{
+	text-decoration: underline;
+}
+.air_disabled{
+	color:#ddd!important;
+	background:#fbfbfb;
+	line-height:30px!important;
+}
+.air_place_change{
+	border:solid 1px #bbb;
+	border-left:0;
+	height: 50px;
+	width: 14px;
+	position: absolute;
+	left: 479px;
+	top: 235px;
+}
+.air_place_change .btn_border2{
+	background:#f4fbfc;
+	margin:14px 0 0 6px;
+	width:15px;
+	height:15px;
+	padding:2px;
+}
+.air_place_change .btn_border2 input{
+	background:#999;
+	width:20px;
+	height:20px;
+	color:#fff;
+	line-height:14px;
+	text-align:center;
+	margin:auto;
+	cursor: pointer;
+}
+.inputBox_arrow{
+	position:absolute;
+	right:0;top:10px;
+	border-left:solid 1px #bababa;
+	cursor: pointer;
+}
+.holiday_list{
+	width:100%;
+}
+.holiday_list ul{
+	margin-left:0!important;
+	width:50%!important;
+	float:left;
+}
+.holiday_list ul li{
+	border:0!important;
+	padding:0 5px!important;
+}
+.holiday_list ul li a{
+	color:#666;
+}
+.search_tit{
+	width:100%;
+	margin:0 20px;
+	margin-top:5px;
+	line-height:40px;
+	color:#00afc7;
+	font-weight:bold;
+	font-size:14px;
+	text-align:left;
+}
+.ticketKeyword{
+	clear:both;
+	float:left;
+	overflow:hidden;
+}
+.ticketKeyword li{
+	padding:0 5px;
+	line-height:28px;
+	float:left;
+}
+.ticketKeyword li a{
+	color:#666;
+}
+.ticketKeyword li a:hover{
+	text-decoration: underline;
+}
+.search_info1 p a{
+	padding-right:18px;
+	color:#535353;
+}
+.search_info1 p a:hover{
+	color:#ed6c00;
+}
+.team_keyword,.team_keyword2{
+	width:100%;
+	border-bottom: solid 1px #f2f2f2;
+	overflow:hidden;
+}
+.team_keyword span,.team_keyword2 span{
+	display: inline-block;
+	color:#bababa;
+	margin-right:16px;
+	float:left;
+	line-height:34px;
+}
+.team_keyword li,.team_keyword2 li{
+	float:left;
+	margin-right:16px;
+	line-height:34px;
+	color:#535353;
+	border-bottom:solid 1px #fff;
+	cursor: pointer;
+}
+.team_keyword li a{
+	color:#535353;
+}
+.team_keyword2 li a{
+	color:#878787;
+}
+.team_keyword li:hover{
+	border-bottom:solid 1px #2caac3;
+	color:#2caac3;
+}
+.team_keyword2 li a:hover{
+	color:#2caac3;
+}
+/*.recommend_content{*/
+	/*display: none;*/
+/*}*/
+/*-------------------------------------------------------------------------------------------------*/
+
 
 /*--------------------推荐--------------------*/
 .recommend{
@@ -376,17 +555,25 @@ header{
 .recommend_nav li:hover{
 	background-color: #00afc7;
 	color: #fff;
-
+	cursor:pointer;
 }
-
-/*北京到首尔*/
+.recommend_nav_more{
+	float:right;
+	padding:0;
+	line-height:33px;
+	font-size:16px;
+}
+.recommend_nav_more a{
+	color:#666;
+	font-weight: normal;
+}
 .recommend_journey{
+	margin-top: 16px;
 	float: left;
 	border: 1px solid #eee;
+	overflow: hidden;
 	width: 240px;
 	margin-right: 10px;
-	margin-top: 16px;
-	overflow: hidden;
 }
 .recommend_journey:hover{
 	border: 1px solid #00afc7;
@@ -399,17 +586,20 @@ header{
 }
 .recommend_journey_pic{
 	width: 240px;
-	-webkit-margin-before: 0em;
+}
+.top_journey .recommend_journey_pic{
+	width:246px!important;
+	float:left;
 }
 .recommend_journey_info{
 	overflow:hidden;
-	padding: 0px 10px 6px 10px;
+	padding: 7px 10px 5px 10px;
 }
 .top_journey .recommend_journey_info{
 	float:right;
 	padding:0!important;
 	position:relative;
-	width:190px!important;
+	width:184px!important;
 	height:238px;
 }
 .recommend_journey_info h1{
@@ -430,8 +620,6 @@ header{
 	text-align:left;
 	line-height:26px;
 	color:#999;
-	-webkit-margin-before: 0em;
-	-webkit-margin-after: 0em;
 }
 .top_journey .recommend_journey_info p{
 	line-height:22px!important;

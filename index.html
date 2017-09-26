@@ -4,7 +4,7 @@
 	<meta charset="utf-8" />
 	<title></title>
 	<link rel="stylesheet" href="./css/index.css" />
-
+	<script src="js/index.js"></script>
 </head>
 <body>
 <header>
@@ -55,7 +55,6 @@
 			<li>门票</li>
 			<li>团购</li>
 			<li>车车</li>
-			<li>自由行</li>
 		</ul>
 		<!-----------右侧信息--------------->
 			<!--------机票-------->
@@ -69,11 +68,11 @@
 				<span class="air_func air_func_bg1"><a href="">出票状态查询</a></span>
 				<span class="air_func air_func_bg2"><a href="">退票改签</a></span>
 			</div>
-			
+
 			<div class="search_hotel">
 				<!------右侧搜索表单------->
 				<form action="" class="search_hotel_form" id="airType_form">
-					<label><input type="radio" name="air_type">单程</label>
+					<label><input type="radio" name="air_type" checked>单程</label>
 					<label class="ml28"><input type="radio" name="air_type">往返</label><br>
 					<div class="posit_v">
 						<div class="inputBox_border">
@@ -82,17 +81,19 @@
 						</div>
 						<div class="inputBox_border posit_r ml57">
 							<span>日期</span>
-							<input type="text" value="2017-09-25" name="">
+							<input type="text" value="2017-09-25" name="startDate">
+							<!--<span class="date_week">后天</span>-->
 						</div><br>
 						<div class="inputBox_border">
 							<span>到达</span>
 							<input type="text" value="" placeholder="输入国家/城市/机场" name="endPlace">
 						</div>
-						<div class="inputBox_border">
+						<div class="inputBox_border posit_r ml57">
 							<span class="ari_disabled">日期</span>
 							<input type="text" value="" name="endDate" disabled>
 							<span class="date_week"> </span>
 						</div>
+
 						<div class="air_place_change">
 							<div class="btn_border2">
 								<input type="button" value="换"/>
@@ -108,40 +109,327 @@
 				<!---------右侧广告信息---------->
 
 				<ul class="search_form_ad">
-					<li><a href="" class="color_b73"><img src="./img/pic_36.png"/>全网预订保障 去哪儿都放心</a></li>
-					<li><a href="" class="color_b90"><img src="./img/icon_11.png"/>正规商家</a></li>
-					<li><a href="" class="color_b90"><img src="./img/icon_13.png"/>支付安全</a></li>
+					<li><a href="" class="color_b73"><img src="img/pic_36.png"/>全网预订保障 去哪儿都放心</a></li>
+					<li><a href="" class="color_b90"><img src="img/icon_11.png"/>正规商家</a></li>
+					<li><a href="" class="color_b90"><img src="img/icon_13.png"/>支付安全</a></li>
 					<li class="border_r0"><a href="" class="color_b90"><img src="./img/icon_16.png"/>售后无忧</a></li>
 				</ul>
 
 			</div>
 		</div>
-	</div>
+
 			<!--------酒店-------->
 		<div class="search_nav_right">
+			<!---------右侧导航---------->
+			<ul class="search_condition">
+				<li class="cur">酒店搜索</li>
+				<li>客栈民宿</li>
+				<li>高端酒店</li>
+				<li>会场预订</li>
+			</ul>
 
+			<div class="search_hotel">
+				<!---------右侧搜索表单---------->
+				<form class="search_hotel_form" id="hotelType_form">
+					<label><input type="radio" name="hotel_type" checked/>国内酒店</label>
+					<label class="ml28"><input type="radio" name="hotel_type"/>国际·港澳台酒店</label><br>
+					<div class="inputBox_border">
+						<span>目的地</span>
+						<input type="text" value="北京" name="hotelPlace"/>
+					</div>
+					<div class="inputBox_border ml10">
+						<input type="text" value="" placeholder="就点名、地标、商圈，支持组合搜索" name="hotelName"/>
+					</div><br>
+					<div class="inputBox_border posit_r">
+						<span>入住日期</span>
+						<input type="text" value="2016-08-11" name="hotelInTime"/>
+						<span class="date_week">后天</span>
+					</div>
+					<div class="inputBox_border posit_r ml10">
+						<span>离店日期</span>
+						<input type="text" value="2016-08-12" name="hotelOutTime"/>
+						<span class="date_week">周五</span>
+					</div>
+
+					<div class="search_info1">
+						<p>实时搜索 382 个网站，71360 个城市，730000 家酒店报价信息</p>
+						<input type="submit" value="立即搜索"/>
+					</div>
+				</form>
+
+				<!---------右侧广告信息---------->
+
+				<ul class="search_form_ad">
+					<li><a href="" class="color_b73"><img src="img/pic_36.png"/>全网预订保障 去哪儿都放心</a></li>
+					<li><a href="">只能搜罗网络酒店底价</a></li>
+					<li class="border_r0"><a href="">覆盖全球730000家酒店</a></li>
+				</ul>
+
+			</div>
 		</div>
 			<!--------火车票-------->
 		<div class="search_nav_right">
+			<!---------右侧导航---------->
+			<ul class="search_condition">
+				<li class="cur">站站搜索</li>
+				<li>车次搜索</li>
+				<li>车站搜索</li>
+			</ul>
 
+			<div class="search_hotel">
+				<!---------右侧搜索表单---------->
+				<form class="search_hotel_form pb44" id="trainType_form"><!--
+                        <label><input type="radio" name="hotel_type"/>国内酒店</label>
+                        <label class="ml28"><input type="radio" name="hotel_type"/>国际·港澳台酒店</label><br>-->
+					<div class="posit_r">
+						<div class="inputBox_border">
+							<span>出发</span>
+							<input type="text" value="" placeholder="输入城市名/车站名" name="startPlace"/>
+						</div>
+						<div class="inputBox_border posit_r ml57">
+							<span>日期</span>
+							<input type="text" value="2016-10-15" name="startDate"/>
+							<span class="date_week">后天</span>
+						</div><br>
+						<div class="inputBox_border">
+							<span>到达</span>
+							<input type="text" value="" placeholder="输入城市名/车站名" name="endPlace"/>
+						</div>
+
+						<div class="air_place_change">
+							<div class="btn_border2">
+								<input type="button" value="换"/>
+							</div>
+						</div>
+					</div>
+
+					<div class="search_info1">
+						<p>【通知】12月30日之后出发的车次预售期调整为30天</p>
+						<input type="submit" value="立即搜索"/>
+					</div>
+				</form>
+
+				<!---------右侧广告信息---------->
+
+				<ul class="search_form_ad">
+					<li><a href="" class="color_b73"><img src="img/pic_36.png"/>全网预订保障 去哪儿都放心</a></li>
+					<li><a href="" class="color_b90"><img src="img/icon_11.png"/>正规商家</a></li>
+					<li><a href="" class="color_b90"><img src="img/icon_13.png"/>支付安全</a></li>
+					<li class="border_r0"><a href="" class="color_b90"><img src="img/icon_16.png"/>售后无忧</a></li>
+				</ul>
+
+			</div>
 		</div>
 			<!--------度假-------->
 		<div class="search_nav_right">
+			<!---------右侧导航---------->
+			<ul class="search_condition">
+				<li class="cur">度假搜索</li>
+				<li>邮轮度假</li>
+				<li>签证</li>
+				<li>包团·定制</li>
+				<li>门票</li>
+				<li>自由行</li>
+			</ul>
 
+			<div class="search_hotel">
+				<!---------右侧搜索表单---------->
+				<form class="search_hotel_form pb63" id="holidayType_form">
+					<div class="inputBox_border posit_r"><span>出发</span><input type="text" value="北京" name="holidayStartPlace"/><img src="img/icon_05.png" class="inputBox_arrow"/></div>
+					<div class="inputBox_border ml10"><input type="text" value="" placeholder="就点名、地标、商圈，支持组合搜索" name="holidayKeyName"/></div>
+
+					<div class="search_info1">
+						<p>提供 4079 个旅行社，1062135 条旅游路线</p>
+						<input type="submit" value="立即搜索"/>
+					</div>
+				</form>
+
+				<!---------右侧广告信息---------->
+				<div class="holiday_list">
+					<ul class="search_form_ad">
+						<li><a href="" class="color_g60">主题度假</a></li>
+						<li><a href="">周边游</a></li>
+						<li class="border_r0"><a href="">海岛游</a></li>
+						<li class="border_r0"><a href="">蜜月游</a></li>
+						<li class="border_r0"><a href="">亲子游</a></li>
+					</ul>
+					<ul class="search_form_ad">
+						<li><a href="" class="color_g60">国内独家</a></li>
+						<li><a href="">丽江</a></li>
+						<li class="border_r0"><a href="">三亚</a></li>
+						<li class="border_r0"><a href="">厦门</a></li>
+						<li class="border_r0"><a href="">青岛</a></li>
+					</ul>
+				</div>
+				<div class="holiday_list">
+					<ul class="search_form_ad">
+						<li><a href="" class="color_g60">出境度假</a></li>
+						<li><a href="">香港</a></li>
+						<li class="border_r0"><a href="">泰国</a></li>
+						<li class="border_r0"><a href="">普吉岛</a></li>
+						<li class="border_r0"><a href="">马尔代夫</a></li>
+					</ul>
+					<ul class="search_form_ad">
+						<li><a href="" class="color_g60">当地参团</a></li>
+						<li><a href="">北京</a></li>
+						<li class="border_r0"><a href="">昆明</a></li>
+						<li class="border_r0"><a href="">成都</a></li>
+						<li class="border_r0"><a href="">拉萨</a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
 			<!--------门票-------->
 		<div class="search_nav_right">
+			<!---------右侧导航---------->
+			<h1 class="search_tit">上万景点门票</h1>
 
+			<div class="search_hotel pb27">
+				<!---------右侧搜索表单---------->
+				<form class="search_hotel_form" id="ticketType_form">
+					<div class="inputBox_border ml10"><input type="text" value="" placeholder="就点名、地标、商圈，支持组合搜索" name="ticketPlace"/></div>
+
+					<div class="search_info1">
+						<input type="submit" value="立即搜索"/>
+					</div>
+
+					<!---------右侧关键词搜索---------->
+
+					<ul class="ticketKeyword mt10">
+						<li><a href="" class="color_g00 fw_b">热门城市</a></li>
+						<li><a href="">北京</a></li>
+						<li><a href="">上海</a></li>
+						<li><a href="">广州</a></li>
+						<li><a href="">西安</a></li>
+						<li><a href="">杭州</a></li>
+						<li><a href="">桂林</a></li>
+						<li><a href="">三亚</a></li>
+						<li><a href="">大连</a></li>
+						<li><a href="">成都</a></li>
+						<li><a href="">深圳</a></li>
+						<li><a href="">武汉</a></li>
+						<li><a href="">厦门</a></li>
+						<li><a href="">香港</a></li>
+						<li><a href="">全部</a></li>
+					</ul>
+					<ul class="ticketKeyword">
+						<li><a href="" class="color_g00 fw_b">当季主题</a></li>
+						<li><a href="">文化古迹</a></li>
+						<li><a href="">海滨海岛</a></li>
+						<li><a href="">古镇</a></li>
+						<li><a href="">动植物园</a></li>
+						<li><a href="">博物馆</a></li>
+						<li><a href="">温泉</a></li>
+						<li><a href="">游乐场</a></li>
+						<li><a href="">自然风光</a></li>
+						<li><a href="">亲子</a></li>
+						<li><a href="">全部</a></li>
+					</ul>
+					<ul class="ticketKeyword">
+						<li><a href="" class="color_g00 fw_b">热门景点</a></li>
+						<li><a href="">上海迪士尼</a></li>
+						<li><a href="">故宫</a></li>
+						<li><a href="">兵马俑</a></li>
+						<li><a href="">九寨沟</a></li>
+						<li><a href="">稻城亚丁</a></li>
+						<li><a href="">鼓浪屿</a></li>
+						<li><a href="">七彩丹霞</a></li>
+						<li><a href="">全部</a></li>
+					</ul>
+				</form>
+
+			</div>
 		</div>
 			<!--------团购-------->
 		<div class="search_nav_right">
+			<div class="search_hotel">
+				<!---------右侧搜索表单---------->
+				<form class="search_hotel_form border_b1 mt10" id="teamType_form">
+					<div class="inputBox_border"><span>入住城市</span><input type="text" value="北京" name="teamPlace"/></div>
+					<div class="inputBox_border ml10"><input type="text" value="" placeholder="就点名、地标、商圈，支持组合搜索" name="teamName"/></div>
 
+					<div class="search_info1">
+						<p><a href="">布丁</a><a href="">99连锁</a><a href="">速8</a><a href="">锦江子星</a><a href="">格林豪泰</a></p>
+						<input type="submit" value="立即搜索"/>
+					</div>
+				</form>
+
+				<!---------右侧广告信息---------->
+				<ul class="team_keyword">
+					<span class="">便捷查找酒店</span>
+					<li class="">热门商圈</li>
+					<li>区域</li>
+					<li>地铁</li>
+					<li>车站</li>
+					<li>旅游</li>
+					<li>医院</li>
+					<li>高校</li>
+				</ul>
+				<ul class="team_keyword2">
+					<li><a href="">西湖湖滨</a></li>
+					<li><a href="">下沙开发区</a></li>
+					<li><a href="">西湖灵隐度假景区</a></li>
+					<li><a href="">武林广场</a></li>
+					<li><a href="">西溪湿地</a></li>
+					<li><a href="">滨江</a></li>
+					<li><a href="">萧山机场</a></li>
+				</ul>
+				<ul class="team_keyword">
+					<span class="">热门分类</span>
+					<li><a href="">周边休闲</a></li>
+					<li><a href="">国内游</a></li>
+				</ul>
+
+				<ul class="search_form_ad">
+					<li class="border_r0"><a href="" class="color_b73"><img src="img/icon_01.png"/>随时退</a></li>
+					<li class="border_r0"><a href="" class="color_b73"><img src="img/icon_08.png"/>极速退</a></li>
+					<li class="border_r0"><a href="" class="color_b73"><img src="img/icon_07.png"/>过期自动退</a></li>
+					<li class="border_r0"><a href="" class="color_b73"><img src="img/icon_09.png"/>先行赔付</a></li>
+				</ul>
+
+			</div>
 		</div>
 			<!--------车车-------->
 		<div class="search_nav_right">
+			<!---------右侧导航---------->
+			<ul class="search_condition">
+				<li class="cur">接送专车</li>
+				<li>国内自驾</li>
+				<li>海外用车</li>
+			</ul>
 
+			<div class="search_hotel">
+				<!---------右侧搜索表单---------->
+				<form class="search_hotel_form border_b1" id="carType_form">
+					<label><input type="radio" name="hotel_type"/>送机</label>
+					<label class="ml28"><input type="radio" name="hotel_type"/>接机</label>
+					<label class="ml28"><input type="radio" name="hotel_type"/>送火车</label>
+					<label class="ml28"><input type="radio" name="hotel_type"/>接火车</label>
+					<label class="ml28"><input type="radio" name="hotel_type"/>送景点</label>
+					<label class="ml28"><input type="radio" name="hotel_type"/>接景点</label><br>
+					<div class="inputBox_border"><span>城市</span><input type="text" value="北京" name="carPlace"/></div>
+					<div class="inputBox_border posit_r ml57"><span>航站楼</span><input type="text" value="首度机场T1航站楼" name="carStartPlace"/><img src="img/icon_05.png" class="inputBox_arrow"/></div><br>
+					<div class="inputBox_border posit_r"><span>日期</span><input type="text" value="2016-08-11" name="carDate"/><span class="date_week">后天</span></div>
+					<div class="inputBox_border posit_r ml57"><span>时间</span><input type="button" value="17:00" name="carStartTime"/><img src="img/icon_05.png" class="inputBox_arrow"/></div>
+
+					<div class="search_info1">
+						<p>实时搜索 382 个网站，71360 个城市，730000 家酒店报价信息</p>
+						<input type="submit" value="立即搜索"/>
+					</div>
+				</form>
+
+				<!---------右侧广告信息---------->
+
+				<ul class="search_form_ad">
+					<li class="border_r0"><a href="" class="color_b90"><img src="img/icon_10.png"/>专属服务</a></li>
+					<li class="border_r0"><a href="" class="color_b90"><img src="img/icon_12.png"/>透明计费</a></li>
+					<li class="border_r0"><a href="" class="color_b90"><img src="img/icon_14.png"/>准点接送</a></li>
+					<li class="border_r0"><a href="" class="color_b90"><img src="img/icon_15.png"/>正规发票</a></li>
+				</ul>
+
+			</div>
 		</div>
-			<!-------自由行-------->
+	</div>
 
 	<!------------------------特惠推荐------------------------->
 	<div class="recommend">
@@ -150,6 +438,7 @@
 				<li class="cur">今日特惠</li>
 				<li>特惠门票</li>
 				<li>特惠住宿</li>
+				<span class="recommend_nav_more"><a href="">更多 ></a></span>
 			</ul>
 
 			<div class="recommend_content">
@@ -157,8 +446,8 @@
 				<div class="recommend_journey top_journey">
 					<img src="img/pic_43.png" class="recommend_journey_pic" />
 					<div class="recommend_journey_info">
-						<h1>北京到首尔自由飞 </h1>
-						<p>直飞往返直飞往返直飞往返直飞往返直飞往返</p>
+						<h1>北京-首尔自由行</h1>
+						<p>直飞往返+全程四花酒店+接送机+签证</p>
 						<div class="recommend_journey_price">
 							<span class="price_now">￥2699</span>
 							<span class="price_market">门市价：<span>3000</span></span>
@@ -169,11 +458,11 @@
 				<div class="recommend_journey">
 					<img src="img/pic_45.png" class="recommend_journey_pic" />
 					<div class="recommend_journey_info">
-						<h1>北京-泰国六日游</h1>
-						<p>飞机直飞+五星级豪华酒店</p>
+						<h1>北京-泰国  6天  跟团游</h1>
+						<p>双岛游+五星酒店+直飞往返</p>
 						<div class="recommend_journey_price">
-							<span class="price_now">￥2699</span>
-							<span class="price_market">门市价：<span>3000</span></span>
+							<span class="price_now">￥988</span>
+							<span class="price_market">门市价：<span>3699</span></span>
 						</div>
 					</div>
 				</div>
@@ -181,11 +470,11 @@
 				<div class="recommend_journey">
 					<img src="img/pic_47.png" class="recommend_journey_pic" />
 					<div class="recommend_journey_info">
-						<h1>北京-三亚六日游</h1>
-						<p>飞机直飞+五星级豪华酒店</p>
+						<h1>北京-三亚  5天  自由行</h1>
+						<p>理文索菲特酒店+私人沙滩+接送机</p>
 						<div class="recommend_journey_price">
-							<span class="price_now">￥2699</span>
-							<span class="price_market">门市价：<span>3000</span></span>
+							<span class="price_now">￥2999</span>
+							<span class="price_market">门市价：<span>8500</span></span>
 						</div>
 					</div>
 				</div>
@@ -193,8 +482,8 @@
 				<div class="recommend_journey top_journey">
 					<img src="img/pic_43.png" class="recommend_journey_pic" />
 					<div class="recommend_journey_info">
-						<h1>北京到首尔自由飞 </h1>
-						<p>直飞往返直飞往返直飞往返直飞往返直飞往返</p>
+						<h1>北京到首尔自由行</h1>
+						<p>直飞往返+全程四花酒店+接送机+签证</p>
 						<div class="recommend_journey_price">
 							<span class="price_now">￥2699</span>
 							<span class="price_market">门市价：<span>3000</span></span>
@@ -203,25 +492,25 @@
 				</div>
 				<!--北京到泰国-->
 				<div class="recommend_journey">
-					<img src="img/pic_45.png" class="recommend_journey_pic" />
+					<img src="img/pic_53.png" class="recommend_journey_pic" />
 					<div class="recommend_journey_info">
 						<h1>北京-泰国六日游</h1>
-						<p>飞机直飞+五星级豪华酒店</p>
+						<p>双岛游+五星酒店+直飞往返</p>
 						<div class="recommend_journey_price">
-							<span class="price_now">￥2699</span>
-							<span class="price_market">门市价：<span>3000</span></span>
+							<span class="price_now">￥988</span>
+							<span class="price_market">门市价：<span>3699</span></span>
 						</div>
 					</div>
 				</div>
 				<!--北京到三亚-->
 				<div class="recommend_journey">
-					<img src="img/pic_47.png" class="recommend_journey_pic" />
+					<img src="img/pic_54.png" class="recommend_journey_pic" />
 					<div class="recommend_journey_info">
-						<h1>北京-三亚六日游</h1>
-						<p>飞机直飞+五星级豪华酒店</p>
+						<h1>北京-三亚  5天  自由行</h1>
+						<p>理文索菲特酒店+私人沙滩+接送机</p>
 						<div class="recommend_journey_price">
-							<span class="price_now">￥2699</span>
-							<span class="price_market">门市价：<span>3000</span></span>
+							<span class="price_now">￥2999</span>
+							<span class="price_market">门市价：<span>8500</span></span>
 						</div>
 					</div>
 				</div>
