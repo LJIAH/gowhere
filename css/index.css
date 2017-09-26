@@ -285,42 +285,66 @@ header{
 	text-align: left;
 }
 
-/*---------------------------------------------------------------------*/
-.inputBox_border input[name='hotelName'],
-.inputBox_border input[name='holidayKeyName'],
-.inputBox_border input[name='teamName']{
-	width:277px!important;
-	text-indent: 0!important;
-}
-.inputBox_border input[name='holidayKeyName'],
-.inputBox_border input[name='teamName']{
-	background:none;
-}
-.inputBox_border input[name='hotelInTime'],
-.inputBox_border input[name='hotelOutTime'],
+/*---------------------------各输入框宽度调整----------------------------------------*/
+/*----------机票----------*/
 .inputBox_border input[name='startPlace'],
 .inputBox_border input[name='endPlace'],
 .inputBox_border input[name='startDate'],
-.inputBox_border input[name='endDate'],
+.inputBox_border input[name='endDate']{
+	width:200px!important;
+	text-indent: 0!important;
+}
+
+/*---------酒店-----------*/
+.inputBox_border input[name='hotelName']{
+	width:273px!important;
+	text-indent: 0!important;
+}
+.inputBox_border input[name='hotelInTime'],
+.inputBox_border input[name='hotelOutTime']{
+	width:199.5px!important;
+	text-indent: 0!important;
+}
+
+/*--------度假-----------*/
+.inputBox_border input[name='holidayStartPlace']{
+	width:195px!important;
+}
+.inputBox_border input[name='holidayKeyName']
+{
+	width:290px!important;
+	text-indent: 0!important;
+}
+
+/*--------门票-----------*/
+.inputBox_border input[name='ticketPlace']{
+	width:535px!important;
+	text-indent: 4px!important;
+}
+
+/*---------团购---------*/
+.inputBox_border input[name='teamName']{
+	width:261px!important;
+	text-indent: 0!important;
+	background:none;
+}
+.inputBox_border input[name='holidayKeyName']{
+	background:none;
+}
+
+/*----------车车---------*/
 .inputBox_border input[name='carDate'],
 .inputBox_border input[name='carPlace'],
 .inputBox_border input[name='carStartTime']{
 	width:200px!important;
 	text-indent: 0!important;
 }
-.inputBox_border input[name='holidayStartPlace']{
-	width:192px!important;
-}
-.inputBox_border input[name='ticketPlace']{
-	width:528px!important;
-	text-indent: 4px!important;
-}
-.inputBox_border input[name='teamName']{
-	width:280px!important;
-}
 .inputBox_border input[name='carStartPlace']{
 	width:188px!important;
 }
+
+
+
 .date_week{
 	position:absolute;
 	right:24px;
