@@ -399,8 +399,6 @@ header{
 	margin-right:4px;
 }
 
-
-
 .air_func{
 	display:inline-block;
 	float:right;
@@ -541,9 +539,9 @@ header{
 
 /*-------------------------------------------推荐栏------------------------------------------------------*/
 
-/*.recommend_content{*/
-	/*display: none;*/
-/*}*/
+.recommend_content{
+	display: none;
+}
 .recommend{
 	margin-top: 25px;
 	overflow: hidden;
