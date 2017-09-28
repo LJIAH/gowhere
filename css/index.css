@@ -675,3 +675,51 @@ header{
 	color: #999;
 }
 
+.recommend_right{
+    float:right;
+    width:240px;
+    border:solid 1px #eee;
+    margin-top:39px;
+}
+.recommend_right_t{
+    display:inline-block;
+    width:100%;
+    line-height:23px;
+    color:#333;
+    text-indent: 8px;
+    border-bottom: solid 1px #eee;
+    text-align:left;
+}
+.recommend_right ul{
+    padding:12px 8px;
+    border-bottom: solid 1px #eee;
+}
+.recommend_right ul li{
+    line-height:22px;
+    text-align:left;
+}
+.recommend_right ul li a{
+    color:#999;
+}
+.recommend_right ul li a:hover{
+    text-decoration: underline;
+}
+.recommend_right_survy{
+    width:100%;
+    padding:12px 0;
+}
+.recommend_right_survy span{
+    display:inline-block;
+    padding:0 8px;
+}
+.recommend_right_survy span a{
+    color:#555;
+}
+.recommend_right_survy span a:hover{
+    text-decoration: underline;
+}
+.survy_icon{
+    background:url("../img/pic_59.png") no-repeat left center;
+    padding-left:23px!important;
+    margin-left:10px;
+}
