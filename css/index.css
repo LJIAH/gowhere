@@ -169,7 +169,7 @@ header{
 }
 .account_nav_other{
 	border: 0;
-	margin-top: 300px;
+	margin-top: 100px;
 }
 .account_nav_vip li:hover, .account_nav_center li:hover, .account_nav_other li:hover{
 	cursor:pointer;
@@ -722,4 +722,56 @@ header{
     background:url("../img/pic_59.png") no-repeat left center;
     padding-left:23px!important;
     margin-left:10px;
+}
+
+/*-----------------------------广告轮播图-------------------------------*/
+#carousel{
+	width: 945px;
+	height: 288px;
+	margin-top: 25px;
+	margin-left: 0;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+}
+
+.bg li{
+	list-style: none;
+	float: left;
+	display: none;
+}
+.bg li.current{
+	display: block;
+}
+
+.indicator{
+	position: absolute;
+	bottom: 20px;
+	left: 440px;
+}
+.indicator li{
+	width: 12px;
+	height: 12px;
+	list-style: none;
+	float: left;
+	background-color: lightgrey;
+	margin-left: 6px;
+	border-radius: 6px;
+	cursor: pointer;
+}
+.indicator .current{
+	background-color: #00a3d2;
+}
+
+.left,.right{
+	position: absolute;
+	top: 120px;
+	cursor: pointer;
+}
+.left{
+	left: 30px;
+
+}
+.right{
+	right: 30px;
 }
