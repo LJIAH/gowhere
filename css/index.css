@@ -775,3 +775,96 @@ header{
 .right{
 	right: 30px;
 }
+
+/*---------------------------当季热门度假--------------------------------*/
+.holi {
+	margin-bottom: 8px;
+	float: left;
+	display: block;
+	width: 945px;
+	margin-right: 15px;
+	zoom: 1;
+	overflow: hidden;
+}
+.holi .holi_head {
+	width: 100%;
+}
+.holi_title {
+	border-bottom:2px solid #00afc7;
+	height: 45px;
+	margin-bottom: 15px;
+}
+.holi_title h3 {
+	line-height:45px;
+	font-size: 23px;
+	color: #00afc7;
+}
+.clrfix {
+	zoom: 1;
+}
+.clrfix:after { /*浮动闭合*/
+	clear: both;
+	display: block; /* 使生成的元素以块级元素显示,占满剩余空间;*/
+	height: 0; /*避免生成内容破坏原有布局的高度。*/
+	visibility: hidden; /*使生成的内容不可见，并允许可能被生成内容盖住的内容可以进行点击和交互;*/
+	content: ".";/*生成内容作为最后一个元素*/
+}
+.holi .holi_body .holi_body_left {
+	float: left;
+	width: 177px;
+}
+.text_link {
+	margin-bottom: -20px;
+}
+.text_link_item {
+	margin-bottom: 11px;
+}
+.text_link .text_link_item .text_link_title {
+	height: 28px;
+	line-height:28px;
+	padding: 0 10px;
+	border: 1px solid #e2f3f8;
+	background: #e2f3f8;
+	color: #0286a0;
+	font-size: 14px;
+	font-weight: 600;
+}
+.text_link_content {
+	height: 75px;
+	width: 165px;
+	overflow: hidden;
+	padding: 10px 0 10px 10px;
+	border: 1px solid #e2f3f8;
+}
+.text_link_content ul li {
+	width: auto;
+	margin-right: 15px;
+	white-space: nowrap;
+	height: 18px;
+	line-height: 18px;
+	float: left;
+	margin-bottom: 7px;
+}
+.holi .holi_body .holi_body_right {
+	float: right;
+	width: 765px;
+}
+.holi_body_right_item {
+	cursor: pointer;
+	border: 1px solid #eee;
+	float: left;
+	margin: 0 0 13px 13px;
+	width: 240px;
+	height: 262px;
+}
+.holi_body_right_img {
+	display: block;
+	width: 240;
+}
+.holi_body_right_item p {
+	color: #666;
+	font-size: 15px;
+	font-weight: 600;
+	margin: 20px 20px 25px 10px;
+	display: block;
+}
