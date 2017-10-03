@@ -1,6 +1,6 @@
 window.onload=function() {
 
-    function tab(aa , bb) {
+    function tab1(aa , bb ) {
         $(bb).eq(0).css("display","block");
         $(aa).click(function(){
             $(this).addClass("cur").siblings().removeClass("cur");
@@ -9,11 +9,21 @@ window.onload=function() {
             $(bb).eq(index).css("display","block");
         })
     }
+    function tab2(aa , bb ) {
+        $(bb).eq(0).css("display","block");
+        $(aa).hover(function(){
+            $(this).addClass("cur").siblings().removeClass("cur");
+            var index = $(this).index();
+            $(bb).css("display","none");
+            $(bb).eq(index).css("display","block");
+        })
+    }
+    //搜索栏
+    $(tab1("#leftNav li",".search_nav_right"));
+    //推荐栏
+    $(tab2("#recNav li",".recommend_content"));
 
-    $(tab("#leftNav li",".search_nav_right"));
-
-    $(tab("#recNav li",".recommend_content"));
-
+    //轮播图
     var index=0;
     $(function(){
         var pics=$(".bg li");
