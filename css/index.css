@@ -883,8 +883,8 @@ header{
 	display: block;
 }
 
-/*---------------热门景点门票板块----------------*/
-.ticket {
+/*---------------热门景点门票----------------*/
+.ticket,.group {
 	width: 945px;
 	margin-top: 25px;
 	margin-left: 0;
@@ -903,23 +903,52 @@ header{
 	width: 100%;
 	/*float: left;*/
 }
-.ticket_title {
+.ticket_title,.group_title {
 	border-bottom:2px solid #00afc7;
 	height: 45px;
 	margin-bottom: 15px;
 }
-.ticket_title h3 {
+.ticket_title h3,.group_title h3 {
 	line-height:45px;
 	font-size: 23px;
 	color: #00afc7;
 }
-.ticket_body_left {
+.group .group_head .tab {
+	padding: 0 0 10px;
+}
+.group .group_head .tab .more  {
+	float: right;
+}
+.tab ul li :hover {
+	background: #3bb0d0;
+	color: #fff;
+}
+.tab ul li.cur a {
+	background: #3bb0d0;
+	color: #fff;
+}
+.tab li a {
+	padding: 0 10px;
+	color: #666;
+	display: inline-block;
+	height: 28px;
+	line-height: 28px;
+	zoom: 1;
+	float: left;
+}
+.ticket_body_left,.group_body_left {
 	float: left;
 	width: 177px;
 }
-.ticket_body_right {
+.ticket_body_right,.group_body_right {
 	float: right;
 	width: 765px;
+}
+.group_body_left .text_link_item{
+	margin-bottom: 29.5px;
+}
+.group_body_left .text_link_item .text_link_content{
+	height: auto;
 }
 .block_item {
 	cursor: pointer;
@@ -928,6 +957,9 @@ header{
 	margin: 0 0 13px 13px;
 	width: 240px;
 	height: 274px;
+}
+.group .blocks {
+	display: none;
 }
 .block_front {
 	width: 495px;
@@ -954,3 +986,61 @@ header{
 	font-size: 12px;
 	color: #aaa;
 }
+.group .block_item img{
+	width: 240px;
+	height: 160px;
+}
+.group .block_front img{
+	width: 528px;
+	height: 277px;
+}
+.group .block_item .title {
+	height: 36px;
+	line-height: 36px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #666;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.group .block_item .content .texts, .qt_textb{
+	height: 24px;
+	color: #999;
+}
+.i_wifi,.i_baggage,.i_hotwater,.i_addr {
+	display: inline-block;
+	width: 18px;
+	height: 15px;
+	vertical-align: middle;
+	margin: 0 0 0 5px;
+	background: url("../img/icon_service.png"),no-repeat;
+}
+.i_wifi {
+	background-position: -29px 0;
+}
+.i_baggage {
+	background-position: -94px 0;
+}
+.i_hotwater {
+	background-position: -62px 0;
+}
+.i_addr {
+	width: 10px;
+	background-position: -179px 0;
+	margin: 0 6px 0 0;
+}
+.ellipsis {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.prices_ctn .price {
+	float: left;
+	color: red;
+	font-size: 16px;
+	font-weight: bold;
+	padding:0 5px 0 10px;
+}
+
+/*------------酒店团购板块--------------*/

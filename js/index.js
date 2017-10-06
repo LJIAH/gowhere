@@ -23,6 +23,9 @@ window.onload=function() {
     //推荐栏
     $(tab2("#recNav li",".recommend_content"));
 
+    //团购
+    $(tab2("#group_nav li",".blocks"));
+
     //轮播图
     var index=0;
     $(function(){
