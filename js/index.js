@@ -62,4 +62,32 @@ window.onload=function() {
         });
     })
 
+    //旅行攻略
+    $(function(){
+        $('.travel_body_left').hover(function(){
+            $('.travel_body_left .travel_item_words').animate({
+                'top' : '240px'
+            },'normal');
+        },function(){
+            $('.travel_body_left .travel_item_words').animate({
+                'top' : '300px'
+            },'normal');
+        });
+
+        //travel_item_right控制
+        // $('.travel_body_right .travel_item').each(function(){
+        //    this.hover(function(){
+           //     $('.travel_body_right .travel_item > a:last-child').animate({
+           //          'top' : '60px'
+           //      },'normal');
+           //      },function(){
+           //     $('.travel_body_right .travel_item > a:last-child').animate({
+           //          'top' : '120px'
+           //      },'normal');
+        //     alert('aa');
+        //    });
+        // });
+    });
+
+
 }
