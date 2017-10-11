@@ -23,11 +23,41 @@ window.onload=function() {
     //推荐栏
     $(tab2("#recNav li",".recommend_content"));
 
+    //旅行攻略
+    $(tab2(".travel_title_nav li",".travel_body"));
+    $(function(){
+        $('.travel_body_left').each(function () {
+            $(this).hover(function(){
+                $(this).children('.travel_item_words').animate({
+                    'top' : '249px'
+                },'normal');
+            },function(){
+                $(this).children('.travel_item_words').animate({
+                    'top' : '294px'
+                },'normal');
+            });
+        });
+
+
+        //travel_item_right控制
+        $('.travel_body_right .travel_item').each(function(){
+            $(this).hover(function(){
+                $(this).children('a:last-child').animate({
+                    'top' : '70px'
+                },'normal');
+            },function(){
+                $(this).children('a:last-child').animate({
+                    'top' : '120px'
+                },'normal');
+            });
+        });
+    });
+
     //团购
     $(tab2("#group_nav li",".blocks"));
-
     //轮播图
     var index=0;
+
     $(function(){
         var pics=$(".bg li");
         var lis=$(".indicator li");
@@ -61,33 +91,6 @@ window.onload=function() {
             t = setInterval(function(){$(".right").click()},2000);
         });
     })
-
-    //旅行攻略
-    $(function(){
-        $('.travel_body_left').hover(function(){
-            $('.travel_body_left .travel_item_words').animate({
-                'top' : '240px'
-            },'normal');
-        },function(){
-            $('.travel_body_left .travel_item_words').animate({
-                'top' : '300px'
-            },'normal');
-        });
-
-        //travel_item_right控制
-        // $('.travel_body_right .travel_item').each(function(){
-        //    this.hover(function(){
-           //     $('.travel_body_right .travel_item > a:last-child').animate({
-           //          'top' : '60px'
-           //      },'normal');
-           //      },function(){
-           //     $('.travel_body_right .travel_item > a:last-child').animate({
-           //          'top' : '120px'
-           //      },'normal');
-        //     alert('aa');
-        //    });
-        // });
-    });
 
 
 }
