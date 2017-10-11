@@ -90,7 +90,7 @@ window.onload=function() {
         $("#carousel").mouseout(function () {
             t = setInterval(function(){$(".right").click()},2000);
         });
-    })
+    });
 
 
 }
