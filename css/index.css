@@ -39,6 +39,7 @@ input,iframe,button{
 button{
 	cursor:pointer;
 }
+
 /*-------------------------------------------特殊样式定义-------------------------------------------*/
 
 /*special css define*/
@@ -67,7 +68,7 @@ button{
 .ml57{margin-left:57px;}
 .mt10{margin-top:10px;}
 
-.border_r0{border-right:0!important;}
+.border_r0{border-right:0;}
 .border_b1{border-bottom: solid 1px #e8e8e8;}
 
 .posit_r{position:relative;}
@@ -210,6 +211,7 @@ header{
 	color: #00afc7;
 }
 .search_nav_right{
+	width: 643px;
 	float: right;
 	background: #fff;
 	display: none;
@@ -289,19 +291,19 @@ header{
 .inputBox_border input[name='endPlace'],
 .inputBox_border input[name='startDate'],
 .inputBox_border input[name='endDate']{
-	width:200px!important;
-	text-indent: 0!important;
+	width:200px;
+	text-indent: 0;
 }
 
 /*---------酒店-----------*/
 .inputBox_border input[name='hotelName']{
-	width:273px!important;
-	text-indent: 0!important;
+	width:273px;
+	text-indent: 0;
 }
 .inputBox_border input[name='hotelInTime'],
 .inputBox_border input[name='hotelOutTime']{
-	width:199.5px!important;
-	text-indent: 0!important;
+	width:199.5px;
+	text-indent: 0;
 }
 
 /*--------度假-----------*/
@@ -607,7 +609,7 @@ header{
 	width: 240px;
 }
 .top_journey .recommend_journey_pic{
-	width:246px!important;
+	width:246px;
 	float:left;
 }
 .recommend_journey_info{
@@ -723,7 +725,7 @@ header{
 }
 .survy_icon{
     background:url("../img/pic_59.png") no-repeat left center;
-    padding-left:23px!important;
+    padding-left:23px;
     margin-left:10px;
 }
 

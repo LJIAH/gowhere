@@ -1,5 +1,6 @@
 window.onload=function() {
 
+    //tab切换
     function tab1(aa , bb ) {
         $(bb).eq(0).css("display","block");
         $(aa).click(function(){
