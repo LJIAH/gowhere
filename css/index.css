@@ -280,7 +280,7 @@ header{
 	width: 200px;
 	text-indent: 8px;
 	margin: 0 5px;
-	background: url(../img/pic_27.png) no-repeat right center;
+	background: url("http://gowhere.oss-cn-shenzhen.aliyuncs.com/pic_27.png") no-repeat right center;
 	font-size: 14px;
 	text-align: left;
 }
@@ -408,10 +408,10 @@ header{
 	background-repeat: no-repeat;
 }
 .air_func_bg1{
-	background-image:url(../img/icon_06.png);
+	background-image:url("http://gowhere.oss-cn-shenzhen.aliyuncs.com/icon_06.png");
 }
 .air_func_bg2{
-	background-image:url(../img/icon_03.png);
+	background-image:url("http://gowhere.oss-cn-shenzhen.aliyuncs.com/icon_03.png");
 }
 .air_func a{
 	font-size:12px;
@@ -724,7 +724,7 @@ header{
     text-decoration: underline;
 }
 .survy_icon{
-    background:url("../img/pic_59.png") no-repeat left center;
+    background:url("http://gowhere.oss-cn-shenzhen.aliyuncs.com/pic_59.png") no-repeat left center;
     padding-left:23px;
     margin-left:10px;
 }
@@ -1016,7 +1016,7 @@ header{
 	height: 15px;
 	vertical-align: middle;
 	margin: 0 0 0 5px;
-	background: url("../img/icon_service.png"),no-repeat;
+	background: url("http://gowhere.oss-cn-shenzhen.aliyuncs.com/icon_service.png"),no-repeat;
 }
 .i_wifi {
 	background-position: -29px 0;
@@ -1086,10 +1086,10 @@ header{
 	margin: 3px 5px 0 0;
 }
 .create_travel_logo {
-	background: url("../img/home_v5.png") no-repeat -281px -122px;
+	background: url("http://gowhere.oss-cn-shenzhen.aliyuncs.com/home_v5.png") no-repeat -281px -122px;
 }
 .publish_travel_logo {
-	background: url("../img/home_v5.png") no-repeat -281px -145px;
+	background: url("http://gowhere.oss-cn-shenzhen.aliyuncs.com/home_v5.png") no-repeat -281px -145px;
 }
 .travel_head_spacer {
 	color: #ccc;
@@ -1291,7 +1291,7 @@ header{
 	position: relative;
 }
 .appfoot .app_container .appbg_l {
-	background: url("../img/app_footer_v4.jpg") no-repeat left top;
+	background: url("http://gowhere.oss-cn-shenzhen.aliyuncs.com/app_footer_v4.jpg") no-repeat left top;
 	width: 330px;
 	height: 239px;
 	position: absolute;
@@ -1299,7 +1299,7 @@ header{
 	bottom: 0;
 }
 .appfoot .app_container .appbg_r {
-	background: url("../img/app_footer_v4.jpg") no-repeat right top;
+	background: url("http://gowhere.oss-cn-shenzhen.aliyuncs.com/app_footer_v4.jpg") no-repeat right top;
 	width: 285px;
 	height: 239px;
 	left: 850px;
@@ -1381,7 +1381,7 @@ header{
 	color: #ed6c00;
 }
 .copyright .s24 {
-	background:url("../img/pic_59.png") no-repeat left center;
+	background:url("http://gowhere.oss-cn-shenzhen.aliyuncs.com/pic_59.png") no-repeat left center;
 	padding-left: 20px;
 }
 .imglist {
@@ -1402,21 +1402,21 @@ header{
 .imglist li.icon_pci {
 	width: 49px;
 	height: 30px;
-	background: url("../img/footer_v10.png") -106px 0 no-repeat;
+	background: url("http://gowhere.oss-cn-shenzhen.aliyuncs.com/footer_v10.png") -106px 0 no-repeat;
 }
 .imglist li.icon_itrust {
 	width: 91px;
 	height: 30px;
-	background: url("../img/footer_v10.png") -160px 0 no-repeat;
+	background: url("http://gowhere.oss-cn-shenzhen.aliyuncs.com/footer_v10.png") -160px 0 no-repeat;
 }
 .imglist li.icon_beian {
 	width: 78px;
 	height: 30px;
-	background: url("../img/footer_v10.png") -256px 0 no-repeat;
+	background: url("http://gowhere.oss-cn-shenzhen.aliyuncs.com/footer_v10.png") -256px 0 no-repeat;
 }
 .imglist li.icon_cnnic {
 	width: 88px;
 	height: 30px;
-	background: url("../img/footer_v10.png") -431px 0 no-repeat;
+	background: url("http://gowhere.oss-cn-shenzhen.aliyuncs.com/footer_v10.png") -431px 0 no-repeat;
 	margin-right: 0;
 }
