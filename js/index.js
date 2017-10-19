@@ -2,7 +2,6 @@ window.onload=function() {
 
     //tab切换
     function tab1(aa , bb ) {
-        $(bb).eq(0).css("display","block");
         $(aa).click(function(){
             $(this).addClass("cur").siblings().removeClass("cur");
             var index = $(this).index();
@@ -11,7 +10,6 @@ window.onload=function() {
         })
     }
     function tab2(aa , bb ) {
-        $(bb).eq(0).css("display","block");
         $(aa).hover(function(){
             $(this).addClass("cur").siblings().removeClass("cur");
             var index = $(this).index();
@@ -23,6 +21,9 @@ window.onload=function() {
     $(tab1("#leftNav li",".search_nav_right"));
     //推荐栏
     $(tab2("#recNav li",".recommend_content"));
+
+    //团购
+    $(tab2("#group_nav li",".blocks"));
 
     //旅行攻略
     $(tab2(".travel_title_nav li",".travel_body"));
@@ -39,7 +40,6 @@ window.onload=function() {
             });
         });
 
-
         //travel_item_right控制
         $('.travel_body_right .travel_item').each(function(){
             $(this).hover(function(){
@@ -54,8 +54,7 @@ window.onload=function() {
         });
     });
 
-    //团购
-    $(tab2("#group_nav li",".blocks"));
+
     //轮播图
     var index=0;
 
